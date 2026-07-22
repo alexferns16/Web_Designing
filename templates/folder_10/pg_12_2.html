@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* Default styles (for desktop/larger screens) */
+      body {
+        font-size: 18px;
+        background-color: white;
+        color: black;
+      }
+
+      .container {
+        width: 80%;
+        margin: auto;
+      }
+
+      /* Tablet screens (width ≤ 768px) */
+      @media (max-width: 768px) {
+        body {
+          font-size: 16px;
+          background-color: #f0f0f0;
+        }
+
+        .container {
+          width: 90%;
+        }
+      }
+
+      /* Mobile screens (width ≤ 480px) */
+      @media (max-width: 480px) {
+        body {
+          font-size: 14px;
+          background-color: #e0f7fa;
+          color: #333;
+        }
+
+        .container {
+          width: 100%;
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p class="container">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea iste aut
+      natus? Asperiores quo, architecto ipsum magnam odio itaque totam quis
+      dolor odit inventore rerum deserunt hic dolorum. Iste, dolorem?
+    </p>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head {
+            font-size: 40px;
+        }
+
+        #C5 {
+            width: 100%;
+            background-color: aqua;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        #C8 {
+            width: 100%;
+            background-color: crimson;
+            padding: 5px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        #C12 {
+            width: 100%;
+            background-color: hotpink;
+            padding: 5px;
+            border-radius: 10px;
+            color: white;
+        }
+    </style>
+    <script>
+        function display_text() {
+            document.getElementById('C5').innerHTML = 'This text is changed successfully';
+            document.getElementById('C5').style.backgroundColor = 'red';
+            document.getElementById('C5').style.fontSize = '30px';
+            document.getElementById('C5').style.color = 'white';
+        }
+
+        function toggle_bc() {
+            if (document.getElementById('C12').style.backgroundColor == 'hotpink') 
+                document.getElementById('C12').style.backgroundColor = 'cadetblue';
+            else
+                document.getElementById('C12').style.backgroundColor = 'hotpink'
+        }
+    </script>
+</head>
+<body>
+    <p><a href="#C5">anchor to heading 5</a></p>
+    <p><a href="#C8">anchor to heading 8</a></p>
+
+    <h1 class="head" id="C1">This is Heading 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet expedita odit et aut culpa molestiae fugiat, fugit quas at, provident magnam reiciendis eaque id aliquid vel mollitia laborum perferendis nihil.</h1>
+    <h1 class="head" id="C2">This is Heading 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolore fugit alias nemo ullam omnis! Fugiat consequatur ipsam tenetur modi aut neque optio aperiam veniam, velit, vitae quod quas ad!</h1>
+    <h1 class="head" id="C3">This is Heading 3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias quaerat deleniti, earum ab fugit nulla magni aut ea veritatis repudiandae est optio similique, quisquam exercitationem adipisci dolores quo tempora. Eos!</h1>
+    <h1 class="head" id="C4">This is Heading 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla magnam quidem corporis id itaque incidunt repudiandae sed obcaecati provident totam sint nesciunt consequatur dolores, magni fuga vel ipsam, exercitationem quam.</h1>
+    <h1 class="head" id="C5">This is Heading 5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, officia tenetur similique itaque temporibus illo laudantium voluptatum cupiditate aut enim perspiciatis sit eum qui libero nisi quae magni, fugit recusandae.</h1>
+    <button onclick="display_text()">change text</button>
+    <h1 class="head" id="C6">This is Heading 6 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius aspernatur beatae officiis quas reprehenderit, fuga suscipit delectus earum similique ad obcaecati repudiandae veritatis alias debitis ab? Explicabo labore laboriosam earum?</h1>
+    <h1 class="head" id="C7">This is Heading 7 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius aspernatur beatae officiis quas reprehenderit, fuga suscipit delectus earum similique ad obcaecati repudiandae veritatis alias debitis ab? Explicabo labore laboriosam earum?</h1>
+    <h1 class="head" id="C8">This is Heading 8 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius aspernatur beatae officiis quas reprehenderit, fuga suscipit delectus earum similique ad obcaecati repudiandae veritatis alias debitis ab? Explicabo labore laboriosam earum?</h1>
+    <h1 class="head" id="C9">This is Heading 9 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius aspernatur beatae officiis quas reprehenderit, fuga suscipit delectus earum similique ad obcaecati repudiandae veritatis alias debitis ab? Explicabo labore laboriosam earum?</h1>
+    <h1 class="head" id="C10">This is Heading 10 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius aspernatur beatae officiis quas reprehenderit, fuga suscipit delectus earum similique ad obcaecati repudiandae veritatis alias debitis ab? Explicabo labore laboriosam earum?</h1>
+    <h1 class="head" id="C11">This is Heading 11 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius aspernatur beatae officiis quas reprehenderit, fuga suscipit delectus earum similique ad obcaecati repudiandae veritatis alias debitis ab? Explicabo labore laboriosam earum?</h1>
+    <h1 class="head" id="C12">This is Heading 12 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius aspernatur beatae officiis quas reprehenderit, fuga suscipit delectus earum similique ad obcaecati repudiandae veritatis alias debitis ab? Explicabo labore laboriosam earum?</h1>
+    <button onclick="toggle_bc()">toggle background-color</button>
+    <h1 class="head" id="C13">This is Heading 12 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius aspernatur beatae officiis quas reprehenderit, fuga suscipit delectus earum similique ad obcaecati repudiandae veritatis alias debitis ab? Explicabo labore laboriosam earum?</h1>
+    <button onclick="display_txt()">display text</button>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="refresh" content="1">
+    </head>
+
+    <body>
+        <p id="demo_one"></p>
+        <p id="demo_two"></p>
+
+        <script>
+            let day;
+            var x = new Date().getDay();
+
+            switch (x) {
+                case 0:
+                    day = 'Sunday';
+                    break;
+                case 1:
+                    day = 'Monday';
+                    break;
+                case 2:
+                    day = 'Tuesday';
+                    break;
+                case 3:
+                    day = 'Wednesday';
+                    break;
+                case 4:
+                    day = 'Thursday';
+                    break;
+                case 5:
+                    day = 'Friday';
+                    break;
+                case 6:
+                    day = 'Saturday';
+                    break;
+            }
+
+            document.getElementById("demo_one").innerHTML = x;
+            document.getElementById("demo_two").innerHTML = day;
+        </script>
+    </body>
+</html>

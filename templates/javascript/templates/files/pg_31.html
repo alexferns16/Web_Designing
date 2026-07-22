@@ -1,0 +1,45 @@
+<!-- 1.a. variables defined with let cannot be redeclared -->
+<!-- 1.b. variables defined with let must be declared before use -->
+<!-- 1.c. variables defined with let have block scope -->
+
+<!-- 2.a. variables defined with var can be redeclared -->
+<!-- 2.b. variables defined with var must be declared before use -->
+<!-- 2.c. variables defined with var cannot have block scope -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <p id="demo_one"></p>
+        <p id="demo_two"></p>
+        <p id="demo_three"></p>
+        <p id="demo_four"></p>
+
+        <script>                                                            
+            let x = 10;
+            /* let x = 20; */                                               /* refer 1.a */
+
+            {                                                               /* this block runs after the execution of st_1, st_2, and st_3 */
+                let x = 30;                                                 /* refer 1.c */
+                document.getElementById("demo_three").innerHTML = x;
+                document.getElementById("demo_one").innerHTML = x;
+            }
+            
+            document.getElementById("demo_four").innerHTML = x;             /* global st_1 */
+            document.getElementById("demo_two").innerHTML = y;              /* global st_2 */          
+
+            {                                                               /* this block does not run after the execution of st_1, st_2, and st_3 */
+                let x = 40;                                                 
+                document.getElementById("demo_five").innerHTML = y;
+                document.getElementById("demo_five").innerHTML = x;
+            }
+            
+            let y = 50;                                                     /* refer 1.b */
+        </script>
+
+        <p id = "demo_five"></p>                                            <!-- <p> tag placed after <script> tag does not work -->
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <p id="demo_one" style="display: none">Hello</p>
+        <button onclick="document.getElementById('demo_one').style.display = 'block'">click me to display</button>
+        <button onclick="document.getElementById('demo_one').style.display = 'none'">click me to hide</button>
+
+        <br><br><br>
+
+        <p id="demo_two" style="display: none">Hi</p>
+        <button onclick="myFunction_one()">click me to toggle</button>
+
+        <script>
+            function myFunction_one() {
+                if (document.getElementById('demo_two').style.display == 'block')
+                    document.getElementById('demo_two').style.display = 'none';
+                else
+                    document.getElementById('demo_two').style.display = 'block';
+            }
+        </script>
+    </body>
+</html>

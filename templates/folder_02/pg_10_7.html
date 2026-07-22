@@ -1,0 +1,29 @@
+<!-- CSS combinator selectors > general sibling selector -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* selects all <p> elements that are next siblings of <div> element */
+        div ~ p {
+            background-color: crimson;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <p>This is paragraph 1</p>
+
+    <div>
+        <p>This is paragraph 2</p>
+    </div>
+
+    <p>This is paragraph 3</p>
+    <h1>This is heading 1</h1>
+    <p>This is paragraph 4</p>
+</body>
+</html>

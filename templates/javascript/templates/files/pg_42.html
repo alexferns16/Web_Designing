@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <p id="demo_one"></p>
+
+        <label for="f_name">First Name: </label>
+        <input type="text" id="f_name" name="fname" value="John">
+
+        <script>
+            data = document.getElementById('f_name').value;
+            document.getElementById("demo_one").innerHTML = data;
+        </script>
+    </body>
+</html>

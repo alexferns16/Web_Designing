@@ -1,0 +1,33 @@
+<!-- Hoisting: -->
+
+<!-- variables defined with var are hoisted to the top and can be initialized at any time -->
+<!-- meaning: You can use the variable before it is declared -->
+
+<!-- variables defined with const are also hoisted to the top, but not initialized -->
+<!-- meaning: Using a const variable before it is declared will result in a ReferenceError -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <p id="demo_one"></p>
+        <p id="demo_two"></p>
+
+        <script>
+            carName = "Volvo";
+            document.getElementById("demo_one").innerHTML = carName;
+            var carName;
+
+            try {
+                alert(carName);
+                const carName = "Volvo";
+            }
+            catch (err) {
+                document.getElementById("demo_two").innerHTML = err;
+            }
+        </script>
+    </body>
+</html>

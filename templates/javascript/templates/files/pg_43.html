@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function myFunction() {
+                data = document.getElementById('f_name').value;
+                document.getElementById("demo_one").innerHTML = data;
+            }
+        </script>
+    </head>
+
+    <body>
+        <p id="demo_one"></p>
+
+        <label for="f_name">First Name: </label>
+        <input type="text" id="f_name" name="fname">
+        <input type="submit" onclick="myFunction()">
+    </body>
+</html>

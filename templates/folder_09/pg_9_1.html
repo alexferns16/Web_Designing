@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function myFunction() {
+        var_one = document.getElementById("f_num").value;
+        var_two = document.getElementById("s_num").value;
+        var_three = Number(var_one) + Number(var_two);
+        document.getElementById("display").innerHTML = var_three;
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="display"></h1>
+
+    <label for="f_num">First Number: </label>
+    <input type="text" id="f_num" name="fnum" />
+
+    <br /><br />
+
+    <label for="s_num">Second Number: </label>
+    <input type="text" id="s_num" name="snum" />
+
+    <br /><br />
+
+    <input type="submit" onclick="myFunction()" />
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      li:first-child {
+        font-weight: 900;
+      }
+
+      li:last-child {
+        font-style: italic;
+      }
+
+      #first_ul li:nth-child(2) {
+        color: aquamarine;
+      }
+
+      #second_ul li:nth-child(2) {
+        color: crimson;
+      }
+
+      div div p:nth-child(3) {
+        background-color: hotpink;
+      }
+
+      /* the order in which the tags are placed actually matters while selecting the positions of the tags, classes, and ids */
+      /* this works because when we write nth-child(3) it actually wants the third child inside body tag to be a div tag */
+      /* --------------------------------------------------------------------------------------------------------------------- */
+      body div:nth-child(3) div p:nth-child(even) {
+        background-color: blueviolet;
+      }
+
+      /* here it may seem like we are selecting the second div inside the body tag which is at third position */
+      /* but it doesn't work that way cause this div tag also got to be at second position inside the body tag */
+      /* so the 'font-style:italic' is not applied in this case */
+      /* --------------------------------------------------------------------------------------------------------------------- */
+      body div:nth-child(2) div p:nth-child(even) {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- first position: div block -->
+    <div>
+      <div>
+        <p>This is div div p 1</p>
+        <p>This is div div p 2</p>
+        <p>This is div div p 3</p>
+      </div>
+    </div>
+
+    <!-- second position: section block -->
+    <section>
+      <div>
+        <p>This is div div p 1</p>
+        <p>This is div div p 2</p>
+        <p>This is div div p 3</p>
+      </div>
+    </section>
+
+    <!-- third position: div block -->
+    <div>
+      <div>
+        <p>This is div div p 1</p>
+        <p>This is div div p 2</p>
+        <p>This is div div p 3</p>
+      </div>
+    </div>
+
+    <!-- fourth position: first_ul -->
+    <ul id="first_ul">
+      <li>This is paragraph 1</li>
+      <li>This is paragraph 2</li>
+      <li>This is paragraph 3</li>
+      <li>This is paragraph 4</li>
+    </ul>
+
+    <!-- fifth position: second_ul -->
+    <ul id="second_ul">
+      <li>This is paragraph 1</li>
+      <li>This is paragraph 2</li>
+      <li>This is paragraph 3</li>
+      <li>This is paragraph 4</li>
+    </ul>
+  </body>
+</html>

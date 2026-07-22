@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .page_height {
+            height: 900px;
+            margin-left: -8px;
+            margin-right: -8px;
+            box-sizing: border-box;
+        }
+
+        .section {
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: -16px;
+            margin-bottom: 0px;
+        }
+
+        .footer {
+            height: 64px;
+            justify-content: center;
+            padding-top: 20px;
+            padding-bottom: 0px;
+            background-color: aquamarine;
+            color: rgba(183, 46, 46, 0.83);
+            font-size: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            margin-top: 10px;
+            bottom: 0px;
+            position: fixed;
+        }
+
+        .header {
+            font-size: 100px;
+            text-align: center;
+            background-color: #f6e1c3;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            padding-left: 0px;
+            padding-right: 0px;
+            height: 150px;
+            width: 100%;
+            box-sizing: border-box;
+            padding-top: 10px;
+            top: 0px;
+            position: fixed;
+        }
+
+        .nav {
+            margin-top: -16px;
+            height: 100px;
+            width: 100%;
+            box-sizing: border-box;
+            top: 150px;
+            position: fixed;
+        }
+
+        .nav_ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding-left: 0px;
+            padding-right: 0px;
+            background-color: #393053;
+            border-bottom: 2px solid black;
+        }
+
+        .nav_ul li {
+            float: left;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+        }
+        
+        .nav_ul li a {
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+        }
+
+        .link {
+            width: 10%;
+            background-color: coral;
+            float: left;
+            box-sizing: border-box;
+            height: 500px;
+            overflow: scroll;
+            top: 206px;
+            left: 0px;
+            position: fixed;
+            list-style-type: none;
+        }
+
+        .link li a {
+            text-decoration: none;
+        }
+
+        .link li {
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .link li:hover {
+            background-color: crimson;
+        }
+
+        .link li:hover a {
+            color: white;
+        }
+
+        .article_relative {
+            width: 100%;
+            background-color: darkseagreen;
+            float: left;
+            box-sizing: border-box;
+            height: 1500px;
+            position: relative;
+        }
+
+        .article_absolute {
+            padding-left: 190px;
+            padding-right: 350px;
+            text-align: justify;
+            top: 210px;
+            position: absolute;
+        }
+
+        .content {
+            width: 20%;
+            background-color: darkorange;
+            float: left;
+            box-sizing: border-box;
+            height: 500px;
+            top: 206px;
+            right: 0px;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="page_height">
+        <div class="article_relative">
+            <div class="article_absolute">
+                <h1 style="font-size: 20px">Link 2a : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusantium cupiditate inventore provident quibusdam, illo porro ut, animi neque esse ea est eius numquam iusto! Eligendi blanditiis architecto consequatur fugiat!</h1>
+                <h1 style="font-size: 20px">Link 2b : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusantium cupiditate inventore provident quibusdam, illo porro ut, animi neque esse ea est eius numquam iusto! Eligendi blanditiis architecto consequatur fugiat!</h1>
+                <h1 style="font-size: 20px">Link 2c : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusantium cupiditate inventore provident quibusdam, illo porro ut, animi neque esse ea est eius numquam iusto! Eligendi blanditiis architecto consequatur fugiat!</h1>
+                <h1 style="font-size: 20px">Link 2d : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusantium cupiditate inventore provident quibusdam, illo porro ut, animi neque esse ea est eius numquam iusto! Eligendi blanditiis architecto consequatur fugiat!</h1>
+                <h1 style="font-size: 20px">Link 2e : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusantium cupiditate inventore provident quibusdam, illo porro ut, animi neque esse ea est eius numquam iusto! Eligendi blanditiis architecto consequatur fugiat!</h1>
+            </div>
+        </div>
+
+        <div class="header">
+            PROJECT
+        </div>
+
+        <div class="nav">
+            <ul class="nav_ul">
+                <li style="background-color:#f5ffc9"><a style="color:#393053 ;" href="E:\Alex\WD112\templates\pg_8_5_a_1.html">Home</a></li>
+                <li><a href="E:\Alex\WD112\templates\pg_8_5_b.html">About</a></li>
+                <li><a href="E:\Alex\WD112\templates\pg_8_5_c.html">Service</a></li>
+                <li><a href="E:\Alex\WD112\templates\pg_8_5_d.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="link">
+                <li><a href="E:\Alex\WD112\templates\pg_8_5_a_1.html"> link 1</a> </li>
+                <li style="background-color: aqua"><a style="color:darkorange" href="E:\Alex\WD112\templates\pg_8_5_a_2.html"> link 2</a> </li>
+                <li><a href="#"> link 3</a> </li>
+                <li><a href="#"> link 4</a> </li>
+                <li><a href="#"> link 5</a> </li>
+                <li><a href="#"> link 6</a> </li>
+                <li><a href="#"> link 7</a> </li>
+                <li><a href="#"> link 8</a> </li>
+                <li><a href="#"> link 9</a> </li>
+                <li><a href="#"> link 10</a> </li>
+                <li><a href="#"> link 11</a> </li>
+                <li><a href="#"> link 12</a> </li>
+                <li><a href="#"> link 13</a> </li>
+                <li><a href="#"> link 14</a> </li>
+                <li><a href="#"> link 15</a> </li>
+                <li><a href="#"> link 16</a> </li>
+                <li><a href="#"> link 17</a> </li>
+                <li><a href="#"> link 18</a> </li>
+            </div>
+
+            <div class="content">
+                Hello Content 
+            </div>
+        </div>
+
+        <div class="footer">
+            www.footer.com
+
+        </div>
+    </div>
+</body>
+</html>

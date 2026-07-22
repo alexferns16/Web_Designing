@@ -1,0 +1,30 @@
+<!-- Redeclaring a variable with const, in another scope, or in another block, is allowed -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <p id="demo_one"></p>
+        <p id="demo_two"></p>
+        <p id="demo_three"></p>
+
+        <script>
+            const x = 2;                                                        // Allowed
+
+            {
+                const x = 3;                                                    // Allowed
+                document.getElementById("demo_two").innerHTML = x;
+            }
+
+            {
+                const x = 4;                                                    // Allowed
+                document.getElementById("demo_three").innerHTML = x;
+            }
+
+            document.getElementById("demo_one").innerHTML = x;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* exclude */
+      body {
+        display: flex;
+        justify-content: center;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container_for_buttons {
+        /* debugging */
+        /* border: 1px solid black; */
+
+        width: 25%;
+        /* replace with percentage while embedding into a container */
+        height: 50px;
+
+        /* placing the buttons at the center */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3%;
+
+        /* exclude */
+        margin-top: 100px;
+      }
+
+      .check_repair_status {
+        background-color: #0a0908;
+        color: #ffffff;
+        text-decoration: none;
+        border: 1px solid #0a0908;
+        width: 47%;
+        height: 90%;
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .track_my_delivery {
+        background-color: #ffffff;
+        color: #0a0908;
+        text-decoration: none;
+        border: 1px solid #0a0908;
+        width: 47%;
+        height: 90%;
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- container for buttons -->
+    <div class="container_for_buttons">
+      <!-- check repair status -->
+      <a href="#" class="check_repair_status">Check repair status</a>
+
+      <!-- track my delivery -->
+      <a href="#" class="track_my_delivery">Track my delivery</a>
+    </div>
+  </body>
+</html>

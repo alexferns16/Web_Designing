@@ -1,0 +1,29 @@
+<!-- Redeclaring an existing var or let variable to const, in the same scope, is not allowed -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <p id="demo_one"></p>
+
+        <script>
+            var x = 2;             // Allowed
+            // const x = 2;        // Not allowed
+
+            {
+                // let x = 2;      // Allowed
+                // const x = 2;    // Not allowed
+            }
+
+            {
+                // const x = 2;    // Allowed
+                // const x = 2;    // Not allowed
+            }
+
+            document.getElementById("demo_one").innerHTML = x;
+        </script>
+    </body>
+</html>

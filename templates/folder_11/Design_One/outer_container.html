@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .view_port {
+        /* debugging */
+        /* border: 3px solid hotpink; */
+
+        height: 100vh;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .outer_container {
+        /* debugging */
+        /* border: 1px solid black; */
+
+        width: 80%;
+        height: 600px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+      }
+
+      .inner_container {
+        /* debugging */
+        /* border: 1px solid black; */
+
+        width: 55%;
+        height: 400px;
+        background-color: #ffffff;
+
+        /* to align the table vertically in the center */
+        display: flex;
+        align-items: center;
+
+        /* shadow */
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+
+        /* exclude */
+        /* margin-top: 100px; */
+      }
+
+      table,
+      th,
+      td {
+        border-collapse: collapse;
+      }
+
+      table {
+        /* debugging */
+        /* border: 1px solid black; */
+
+        width: 60%;
+        height: 65%;
+        margin-left: 10%;
+      }
+
+      /* th,
+      td {
+        border: 1px solid black;
+      } */
+
+      /* note: th, td expands based on the content even if the fixed height is specified */
+
+      .th_headline {
+        /* debugging */
+        /* border: 1px solid cadetblue; */
+
+        height: 54%;
+      }
+
+      .headline {
+        /* debugging */
+        /* border: 1px solid cadetblue; */
+
+        width: 80%;
+        height: 100%;
+
+        /* by default the text is centered in th, td */
+        /* by doing this we get the text to top-left */
+        text-align: left;
+        vertical-align: top;
+
+        font-family: "Inter";
+        font-size: 55px;
+        line-height: 1.1;
+      }
+
+      .td_statement {
+        /* debugging */
+        /* border: 1px solid cadetblue; */
+
+        height: 23%;
+      }
+
+      .statement {
+        /* debugging */
+        /* border: 1px solid cadetblue; */
+
+        width: 80%;
+        height: 100%;
+
+        font-family: "Inter";
+        line-height: 1.5;
+      }
+
+      .td_buttons {
+        /* debugging */
+        /* border: 1px solid cadetblue; */
+
+        height: 23%;
+      }
+
+      .buttons {
+        /* debugging */
+        /* border: 1px solid black; */
+
+        width: 100%;
+        height: 100%;
+
+        /* placing the buttons at the center */
+        display: flex;
+        align-items: center;
+        gap: 3%;
+      }
+
+      .check_repair_status {
+        background-color: #0a0908;
+        color: #ffffff;
+        text-decoration: none;
+        border: 1px solid #0a0908;
+        width: 47%;
+        height: 70%;
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .track_my_delivery {
+        background-color: #ffffff;
+        color: #0a0908;
+        text-decoration: none;
+        border: 1px solid #0a0908;
+        width: 47%;
+        height: 70%;
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .left_half {
+        /* debugging */
+        /* border: 1px solid cadetblue; */
+
+        width: 50%;
+        height: 100%;
+
+        background-color: #e0afa0;
+      }
+
+      .right_half {
+        /* debugging */
+        /* border: 1px solid yellowgreen; */
+
+        width: 50%;
+        height: 100%;
+      }
+
+      .image {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="view_port">
+      <div class="outer_container">
+        <div class="left_half"></div>
+        <div class="right_half">
+          <img
+            src="E:\Alex\WD_Assignments\Assignment_1\women_two.avif"
+            class="image"
+          />
+        </div>
+
+        <div class="inner_container">
+          <table>
+            <!-- headline -->
+            <tr>
+              <th class="th_headline">
+                <div class="headline">We'll take it from here</div>
+              </th>
+            </tr>
+
+            <!-- statement -->
+            <tr>
+              <td class="td_statement">
+                <div class="statement">
+                  Find out what to expect from start to finish with your claim.
+                </div>
+              </td>
+            </tr>
+
+            <!-- buttons -->
+            <tr>
+              <td class="td_buttons">
+                <!-- container for buttons -->
+                <div class="buttons">
+                  <!-- check repair status -->
+                  <a href="#" class="check_repair_status"
+                    >Check repair status</a
+                  >
+
+                  <!-- track my delivery -->
+                  <a href="#" class="track_my_delivery">Track my delivery</a>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

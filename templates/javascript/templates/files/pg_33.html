@@ -1,0 +1,51 @@
+<!-- Constant Objects and Arrays:
+
+The keyword const is a little misleading
+It does not define a constant value
+It defines a constant reference to a value
+
+Because of this you can NOT:
+Reassign a constant value
+Reassign a constant array
+Reassign a constant object
+
+But you CAN:
+Change the elements of constant array
+Change the properties of constant object -->
+
+<!-- ------------------------------------------- -->
+
+<!-- Constant Arrays:
+You can change the elements of a constant array 
+Declaring a constant array does NOT make the elements unchangeable -->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo_one"></p>
+        <p id="demo_two"></p>
+
+        <script>
+            // Create an Array:
+            const cars = ["Saab", "Volvo", "BMW"];
+
+            // Change an element:
+            cars[0] = "Toyota";
+
+            // Add an element:
+            cars.push("Audi");
+
+            // Display the Array:
+            document.getElementById("demo_one").innerHTML = cars;
+
+            try {
+                const cars = ["Saab", "Volvo", "BMW"];
+                // You cannot reassign an array
+                cars = ["Toyota", "Volvo", "Audi"];
+            }
+            catch (err) {
+                document.getElementById("demo_two").innerHTML = err;
+            }
+        </script>
+    </body>
+</html>

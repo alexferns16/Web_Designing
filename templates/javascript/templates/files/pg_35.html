@@ -1,0 +1,22 @@
+<!-- 1. Declaring a variable with const is similar to let when it comes to Block Scope -->
+<!-- 2. The x declared in the block, in this example, is not the same as the x declared outside the block -->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo_one"></p>
+
+        <script>
+            const  x = 10;
+            // Here x is 10
+
+            {  
+            const x = 2;
+            // Here x is 2
+            }
+
+            document.getElementById("demo_one").innerHTML = "x is " + x;
+            // Here x is 10
+        </script>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!-- nth-child selector -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div:nth-child(3) {
+        background-color: hotpink;
+        color: white;
+      }
+
+      li:nth-child(2) {
+        background-color: aqua;
+        color: cadetblue;
+      }
+
+      ul.ul_one li:nth-child(1) {
+        background-color: crimson;
+        color: white;
+      }
+
+      ul.ul_two li:nth-child(3) {
+        background-color: crimson;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>This is paragraph 1</p>
+    </div>
+
+    <div>
+      <p>This is paragraph 1</p>
+    </div>
+
+    <div>
+      <p>This is paragraph 1</p>
+    </div>
+
+    <ul>
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+    </ul>
+
+    <ul class="ul_one">
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+    </ul>
+
+    <ul class="ul_two">
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+    </ul>
+  </body>
+</html>

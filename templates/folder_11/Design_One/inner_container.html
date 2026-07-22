@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* exclude */
+      body {
+        display: flex;
+        justify-content: center;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .inner_container {
+        /* debugging */
+        /* border: 1px solid black; */
+
+        width: 35%;
+        height: 400px;
+
+        /* to align the table vertically in the center */
+        display: flex;
+        align-items: center;
+
+        /* shadow */
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+
+        /* exclude */
+        margin-top: 100px;
+      }
+
+      table,
+      th,
+      td {
+        border-collapse: collapse;
+      }
+
+      table {
+        /* debugging */
+        /* border: 1px solid black; */
+
+        width: 70%;
+        height: 65%;
+        margin-left: 10%;
+      }
+
+      .headline {
+        /* debugging */
+        /* border: 1px solid cadetblue; */
+
+        height: 50%;
+
+        /* by default the text is centered */
+        /* by doing this we get the text to top-left */
+        text-align: left;
+        vertical-align: top;
+
+        font-family: "Inter";
+        font-size: 55px;
+        line-height: 1.1;
+      }
+
+      .statement {
+        /* debugging */
+        /* border: 1px solid cadetblue; */
+
+        height: 25%;
+
+        /* by default the text is centered */
+        /* by doing this we get the text to top-left */
+        text-align: left;
+        vertical-align: top;
+
+        font-family: "Inter";
+        line-height: 1.3;
+      }
+
+      .buttons {
+        /* debugging */
+        /* border: 1px solid cadetblue; */
+
+        height: 25%;
+      }
+
+      .container_for_buttons {
+        /* debugging */
+        /* border: 1px solid black; */
+
+        width: 100%;
+        /* replace with percentage while embedding into a container */
+        height: 100%;
+
+        /* placing the buttons at the center */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3%;
+      }
+
+      .check_repair_status {
+        background-color: #0a0908;
+        color: #ffffff;
+        text-decoration: none;
+        border: 1px solid #0a0908;
+        width: 47%;
+        height: 70%;
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .track_my_delivery {
+        background-color: #ffffff;
+        color: #0a0908;
+        text-decoration: none;
+        border: 1px solid #0a0908;
+        width: 47%;
+        height: 70%;
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="inner_container">
+      <table>
+        <!-- headline -->
+        <tr>
+          <th class="headline">
+            We'll take it <br />
+            from here
+          </th>
+        </tr>
+
+        <!-- statement -->
+        <tr>
+          <td class="statement">
+            Find out what to expect from start to finish with <br />
+            your claim.
+          </td>
+        </tr>
+
+        <!-- buttons -->
+        <tr>
+          <td class="buttons">
+            <!-- container for buttons -->
+            <div class="container_for_buttons">
+              <!-- check repair status -->
+              <a href="#" class="check_repair_status">Check repair status</a>
+
+              <!-- track my delivery -->
+              <a href="#" class="track_my_delivery">Track my delivery</a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

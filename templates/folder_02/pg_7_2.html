@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .outer {
+        /* border: 1px solid black; */
+        width: 90%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+        border-radius: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+
+      .inner_one {
+        /* border: 1px solid black; */
+        width: 40%;
+        height: 250px;
+        border-radius: 20px;
+        /* float: left; */
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .inner_two {
+        /* border: 1px solid black; */
+        width: 40%;
+        height: 250px;
+        border-radius: 20px;
+        /* float: left; */
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="inner_one"></div>
+      <div class="inner_two"></div>
+    </div>
+
+    <div class="outer">
+      <div class="inner_one"></div>
+      <div class="inner_two"></div>
+    </div>
+
+    <div class="outer">
+      <div class="inner_one"></div>
+      <div class="inner_two"></div>
+    </div>
+  </body>
+</html>

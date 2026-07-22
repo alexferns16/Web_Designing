@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <p id="demo_one"></p>
+        <p id="demo_two"></p>
+
+        <script>    
+            var x;                      /* declaring a variable */
+            var y=6;                    /* declaring and defining a variable on the same line */
+            var u=8; v=9;               /* multiple assignment statement */
+
+            x=5;                        /* defining a variable*/
+            var z=x+y;                  /* sum of two variables */
+            var w=u+v;
+
+            document.getElementById("demo_one").innerHTML = z;
+            document.getElementById("demo_two").innerHTML = w;
+        </script>
+
+        <p id="demo_two"></p>           <!-- does not work here after <script> tag -->
+    </body>
+</html>

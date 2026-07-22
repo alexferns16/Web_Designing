@@ -1,0 +1,38 @@
+<!-- CSS combinator selectors > adjacent sibling selector -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* selects <h1> element that is immediately after <div> element*/
+            div + h1 {
+                background-color: crimson;
+                color: aqua;
+            }
+
+            /* selects <p> element that is immediately after <div> element*/
+            div + p {
+                background-color: hotpink;
+                color: aqua;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <p>This is paragraph 1</p>
+        </div>
+        
+        <h1>This is heading 1</h1>
+        <p>This is paragraph 2</p>
+        <h1>This is heading 1</h1>
+
+        <div>
+            <p>This is paragraph 3</p>
+        </div>
+
+        <p>This is paragraph 4</p>
+        <h1>This is heading 2</h1>
+        <p>This is paragraph 5</p>
+    </body>
+</html>

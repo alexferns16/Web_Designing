@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="refresh" content="1">
+
+        <style>
+            .flex-container {
+                display: flex;
+                font-size: 5px;
+                float: right;
+                width: 30%;
+                height: 70px;
+              }
+              
+            .flex-item-right {
+                background-color: crimson;
+                padding: 10px;
+                flex: 50%;
+                border-radius: 15px;
+                color: white;
+                text-align: left;
+            }
+
+           .p_demo_one {
+                color:aqua; 
+                background-color:black; 
+                border-radius:15px; 
+                padding: 30px; 
+                width: 50%; 
+                text-align: center; 
+                float: left; 
+                font-size: 50px; 
+                margin-left: 12%; 
+                margin-bottom: 2px; 
+                margin-top: 25px;
+            }
+
+            .p_demo_two {
+                width: 25%;
+                text-align: center;
+                font-size: 30px;
+                float: left;
+                margin-top: 8%;
+            }
+
+            .p_demo_three {
+                width: 33%; 
+                margin-left: 35%; 
+                text-align: left;
+                float: left;
+                width: 100%;
+                margin-top: 10%;
+                margin-left: 40%;
+            }
+        </style>
+    </head>
+
+    <body style="background-color: aqua">
+        <p class="p_demo_one" id="demo_one"></p>
+        <b><p class="p_demo_two" id="demo_two"></p>
+        <i><b><p class="p_demo_three" id="demo_three"></p></b></i>
+        
+        <div class="flex-container">
+            <div class="flex-item-right">
+                <input type="text" id="fname" name="fname" placeholder="Your Name Here"><br><br>
+                <input type="submit" value="Submit">
+                <p style="float: right; font-size: 20px">&#128515</p>
+            </div>
+        </div>
+
+        <script>
+            var x = new Date().getHours()
+            var y = new Date().getMinutes()
+            var z = new Date().getSeconds()
+
+            document.getElementById("demo_one").innerHTML = x + ':' + y + ':' + z;
+
+            if (x >= 12) {
+                document.getElementById("demo_two").innerHTML = 'PM' 
+            } else {
+                document.getElementById("demo_two").innerHTML = 'AM'
+            }
+
+
+            if (z%10==0 || z%10==5) {
+                v = 'You' 
+            } else if (z%10==1 || z%10==6) {
+                v = 'are'
+            } else if (z%10==2) {
+                v = 'Precious'
+            } else if (z%10==7) {
+                v = "Loved"
+            } else if (z%10==3 || z%10==8) {
+                v = '&#128151'
+            } else if (z%10==4 || z%10==9) {
+                v = '&#128525'
+            }
+
+            document.getElementById("demo_three").innerHTML = v;
+        </script>
+    </body>
+</html>

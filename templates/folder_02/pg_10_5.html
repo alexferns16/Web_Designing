@@ -1,0 +1,44 @@
+<!-- CSS combinator selectors > child selector -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*div > p {
+            background-color: crimson;
+        }*/
+
+        /*div p {
+            background-color: crimson;
+        }*/
+
+        div section p {
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is paragraph 1</p>          <!-- here <p> is a child of <div> -->
+        <p>This is paragraph 2</p>          <!-- here <p> is a child of <div> -->
+
+        <section>
+            <p>This is paragraph 3</p>      <!-- here <p> is a descendent of <div> and a child of <section> -->
+        </section>
+
+        <div>
+            <p>This is paragraph 1</p>
+            <p>This is paragraph 2</p>
+        </div>
+
+        <h1>This is heading 1</h1>
+    </div>
+
+    <p>This is paragraph 4</p>
+    <p>This is paragraph 5</p>
+</body>
+</html>

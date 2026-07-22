@@ -1,0 +1,24 @@
+<!-- with arguments to a function -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function myFunction(p_one, p_two) {
+                return p_one * p_two
+            } 
+        </script>
+    </head>
+
+    <body>
+        <p id="demo_one"></p>
+
+        <label for="f_num">First Number: </label>
+        <input type="text" id="f_num" name="fnum">
+
+        <label for="s_num">Second Number: </label>
+        <input type="text" id="s_num" name="snum">
+
+        <input type="submit" onclick="document.getElementById('demo_one').innerHTML = myFunction(Number(document.getElementById('f_num').value), Number(document.getElementById('s_num').value))">
+    </body>
+</html>

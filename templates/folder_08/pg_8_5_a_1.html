@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction_a() {
+            window.scrollTo(0, 0);
+        }
+
+        function myFunction_b() {
+            window.scrollTo(0, 80);
+        }
+
+        function myFunction_c() {
+            window.scrollTo(0, 160);
+        }
+
+        function myFunction_d() {
+            window.scrollTo(0, 240);
+        }
+
+        function myFunction_e() {
+            window.scrollTo(0, 320);
+        }
+    </script>
+
+    <style>
+        .page_height {
+            height: 2000px;
+            margin-left: -8px;
+            margin-right: -8px;
+            box-sizing: border-box;
+        }
+
+        .section {
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: -16px;
+            margin-bottom: 0px;
+        }
+
+        .footer {
+            height: 64px;
+            justify-content: center;
+            padding-top: 20px;
+            padding-bottom: 0px;
+            background-color: aquamarine;
+            color: rgba(183, 46, 46, 0.83);
+            font-size: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            margin-top: 10px;
+            bottom: 0px;
+            position: fixed;
+        }
+
+        .header {
+            font-size: 100px;
+            text-align: center;
+            background-color: #f6e1c3;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            padding-left: 0px;
+            padding-right: 0px;
+            height: 150px;
+            width: 100%;
+            box-sizing: border-box;
+            padding-top: 10px;
+            top: 0px;
+            position: fixed;
+        }
+
+        .nav {
+            margin-top: -16px;
+            height: 100px;
+            width: 100%;
+            box-sizing: border-box;
+            top: 150px;
+            position: fixed;
+        }
+
+        .header_nav {
+            height: 250px;
+            width: 100%;
+            background-color: black;
+        }
+
+        .nav_ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding-left: 0px;
+            padding-right: 0px;
+            background-color: #393053;
+            border-bottom: 2px solid black;
+        }
+
+        .nav_ul li {
+            float: left;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+        }
+        
+        .nav_ul li a {
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+        }
+
+        .link {
+            width: 10%;
+            background-color: coral;
+            float: left;
+            box-sizing: border-box;
+            height: 500px;
+            overflow: scroll;
+            top: 206px;
+            left: 0px;
+            position: fixed;
+            list-style-type: none;
+        }
+
+        .link li a {
+            text-decoration: none;
+        }
+
+        .link li {
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .link li:hover {
+            background-color: crimson;
+        }
+
+        .link li:hover a {
+            color: white;
+        }
+
+        .article_relative {
+            width: 100%;
+            background-color: darkseagreen;
+            float: left;
+            box-sizing: border-box;
+            height: 2000px;
+            position: relative;
+        }
+
+        .article_absolute {
+            padding-left: 190px;
+            padding-right: 350px;
+            text-align: justify;
+            top: 210px;
+            position: absolute;
+        }
+
+        .content {
+            width: 20%;
+            background-color: darkorange;
+            float: left;
+            box-sizing: border-box;
+            height: 500px;
+            top: 206px;
+            right: 0px;
+            position: fixed;
+        }
+
+        @media only screen and (max-width: 900px) {
+            .nav_ul {
+                flex-direction: column;
+                height: auto;
+                top: -150px;
+                position: relative;
+            }
+
+            .header {
+                position: relative;
+            }
+
+            .nav {
+                position: relative;
+            }
+
+            .link {
+                flex-direction: column;
+                display: flex;
+                width: 100%;
+                float: left;
+                height: auto;
+                top: 135px;
+                position: relative;
+            }
+
+            .content {
+                flex-direction: column;
+                display: flex;
+                width: 100%;
+                float: left;
+                height: auto;
+                top: 630px;
+                position: relative;
+            }
+
+            .article_absolute, .article_relative {
+                flex-direction: column;
+                display: flex;
+                width: 100%;
+                float: left;
+                height: auto;
+                top: 550px;
+                position: absolute;
+            }
+
+            .article_absolute {
+                width: 900px;
+                display: flex;
+            }
+
+            .article_relative {
+                width: 900px;
+                display: flex;
+            }
+
+            .page_height {
+                height: 1000px;
+            }
+
+            .footer {
+                top: 640px;
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page_height">
+        <div class="article_relative">
+            <div class="article_absolute">
+                <h1 id="one_a" style="font-size: 20px">Link 1a : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusantium cupiditate inventore provident quibusdam, illo porro ut, animi neque esse ea est eius numquam iusto! Eligendi blanditiis architecto consequatur fugiat!</h1>
+                <h1 id="one_b" style="font-size: 20px">Link 1b : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusantium cupiditate inventore provident quibusdam, illo porro ut, animi neque esse ea est eius numquam iusto! Eligendi blanditiis architecto consequatur fugiat!</h1>
+                <h1 id="one_c" style="font-size: 20px">Link 1c : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusantium cupiditate inventore provident quibusdam, illo porro ut, animi neque esse ea est eius numquam iusto! Eligendi blanditiis architecto consequatur fugiat!</h1>
+                <h1 id="one_d" style="font-size: 20px">Link 1d : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusantium cupiditate inventore provident quibusdam, illo porro ut, animi neque esse ea est eius numquam iusto! Eligendi blanditiis architecto consequatur fugiat!</h1>
+                <h1 id="one_e" style="font-size: 20px">Link 1e : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusantium cupiditate inventore provident quibusdam, illo porro ut, animi neque esse ea est eius numquam iusto! Eligendi blanditiis architecto consequatur fugiat!</h1>
+            </div>
+        </div>
+
+        <div class="header">
+            PROJECT
+        </div>
+
+        <div class="nav">
+            <ul class="nav_ul">
+                <li style="background-color:#f5ffc9"><a style="color:#393053 ;" href="E:\Alex\WD112\templates\pg_8_5_a_1.html">Home</a></li>
+                <li><a href="E:\Alex\WD112\templates\pg_8_5_b.html">About</a></li>
+                <li><a href="E:\Alex\WD112\templates\pg_8_5_c.html">Service</a></li>
+                <li><a href="E:\Alex\WD112\templates\pg_8_5_d.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="link">
+                <li style="background-color: aqua"><a style="color:darkorange" href="E:\Alex\WD112\templates\pg_8_5_a_1.html"> link 1</a> </li>
+                <li><a href="E:\Alex\WD112\templates\pg_8_5_a_2.html"> link 2</a> </li>
+                <li><a href="#"> link 3</a> </li>
+                <li><a href="#"> link 4</a> </li>
+                <li><a href="#"> link 5</a> </li>
+                <li><a href="#"> link 6</a> </li>
+                <li><a href="#"> link 7</a> </li>
+                <li><a href="#"> link 8</a> </li>
+                <li><a href="#"> link 9</a> </li>
+                <li><a href="#"> link 10</a> </li>
+                <li><a href="#"> link 11</a> </li>
+                <li><a href="#"> link 12</a> </li>
+                <li><a href="#"> link 13</a> </li>
+                <li><a href="#"> link 14</a> </li>
+                <li><a href="#"> link 15</a> </li>
+                <li><a href="#"> link 16</a> </li>
+                <li><a href="#"> link 17</a> </li>
+                <li><a href="#"> link 18</a> </li>
+            </div>
+
+            <div class="content">
+                <button onclick="myFunction_a()">button a</button><br>
+                <button onclick="myFunction_b()">button b</button><br>
+                <button onclick="myFunction_c()">button c</button><br>
+                <button onclick="myFunction_d()">button d</button><br>
+                <button onclick="myFunction_e()">button e</button><br>
+            </div>
+        </div>
+
+        <div class="footer">
+            www.footer.com
+        </div>
+    </div>
+</body>
+</html>

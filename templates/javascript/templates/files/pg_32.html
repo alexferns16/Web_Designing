@@ -1,0 +1,36 @@
+<!-- variables defined with const cannot be redeclared -->
+<!-- variables defined with const cannot be reassigned -->
+<!-- variables defined with const have block scope -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <p id="demo_one"></p>
+        <p id="demo_two"></p>
+        <p id="demo_three"></p>
+        <p id="demo_four"></p>
+
+        <script>
+            const e = 2.72;
+            document.getElementById("demo_four").innerHTML = e;
+
+            {
+                const e = 2.71;
+                document.getElementById("demo_three").innerHTML = e;
+            }
+
+            try {
+                const PI = 3.141592653589793;
+                PI = 3.14;
+            }
+            catch (err) {
+                document.getElementById("demo_one").innerHTML = 'err prints: ';
+                document.getElementById("demo_two").innerHTML = err;
+            }
+        </script>
+    </body>
+</html>

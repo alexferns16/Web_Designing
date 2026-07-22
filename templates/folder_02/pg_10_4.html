@@ -1,0 +1,47 @@
+<!-- CSS combinator selectors > descendant selector -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div div p {
+            background-color: cadetblue;
+        }
+
+        div.div_one p {
+            background-color: hotpink;
+        }
+
+        div.div_two p {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is paragraph 1</p>      <!-- here <p> is a descendant and also a child of <div>. consider example pg_9_b-->
+        <p>This is paragraph 2</p>      <!-- here <p> is a descendant and also a child of <div>. consider example pg_9_b-->
+        <h1>This is heading 1</h1>      <!-- here <h1> is a descendant and also a child of <div>. consider example pg_9_b-->
+        <div>
+            <p>This is paragraph 1</p>      
+            <p>This is paragraph 2</p>      
+            <h1>This is heading 1</h1>      
+        </div>
+    </div>
+
+    <div class="div_one">
+        <p>This is paragraph 1</p>      <!-- here <p> is a descendant and also a child of <div>. consider example pg_9_b-->
+        <p>This is paragraph 2</p>      <!-- here <p> is a descendant and also a child of <div>. consider example pg_9_b-->
+        <h1>This is heading 1</h1>      <!-- here <h1> is a descendant and also a child of <div>. consider example pg_9_b-->
+        <div class="div_two">
+            <p>This is paragraph 1</p>      
+            <p>This is paragraph 2</p>      
+            <h1>This is heading 1</h1>      
+        </div>
+    </div>
+</body>
+</html>

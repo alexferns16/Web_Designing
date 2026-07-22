@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box {
+        /* width: 50%; */
+        max-width: 300px;
+        background: lightblue;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- the maximum width of the container is going to be 300px -->
+    <!-- but when the browsers width shrinks below 300px -->
+    <!-- the by default container's width in css is 'width:100%' -->
+    <!-- and hence, the container's width is going to be 100% with respect to the browsers width -->
+
+    <!-- the maximum width of the container is going to be 300px -->
+    <!-- but when the browsers width shrinks below 300px -->
+    <!-- and when we specifically use 'width:50%' for the container, as it is commented in the above case -->
+    <!-- the container's width is going to be 50% with respect to the browsers width -->
+    <div class="box">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, esse? Eum
+      assumenda quisquam commodi rerum, suscipit explicabo expedita sunt aperiam
+      sit at distinctio est voluptas voluptatibus quod id eius harum?
+    </div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!-- Constant Objects and Arrays:
+
+The keyword const is a little misleading
+It does not define a constant value
+It defines a constant reference to a value
+
+Because of this you can NOT:
+Reassign a constant value
+Reassign a constant array
+Reassign a constant object
+
+But you CAN:
+Change the elements of constant array
+Change the properties of constant object -->
+
+<!-- ------------------------------------------- -->
+
+<!-- Constant Objects:
+You can change the properties of a constant object
+Declaring a constant object does NOT make the objects properties unchangeable -->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo_one"></p>
+        <p id="demo_two"></p>
+        <p id="demo_three"></p>
+
+        <script>
+            // Create an object:
+            const car = {type:"Fiat", model:"500", color:"White"};
+
+            // Change a property:
+            car.color = "Red";
+
+            // Add a property:
+            car.owner = "Johnson";
+
+            // Display the property:
+            document.getElementById("demo_one").innerHTML = "Car owner is " + car.owner;
+            document.getElementById("demo_two").innerHTML = "Car color is " + car.color;
+
+            try {
+                const car = {type:"Fiat", model:"500", color:"White"};
+                // You cannot reassign an object
+                car = {type:"Volvo", model:"EX60", color:"Red"};
+            }
+            catch (err) {
+                document.getElementById("demo_three").innerHTML = err;
+            }
+        </script>
+    </body>
+</html>
