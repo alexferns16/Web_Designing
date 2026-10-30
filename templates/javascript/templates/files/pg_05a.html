@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      .container {
+        border: 1px solid black;
+        width: 10%;
+        height: 150px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <p id="demo_one"></p>
+      <p id="demo_two"></p>
+      <p id="demo_three"></p>
+    </div>
+
+    <button onclick="myFunction_one()">Click Me One!</button>
+
+    <button onclick="myFunction_two()">Click Me Two!</button>
+
+    <script>
+      function myFunction_one() {
+        document.getElementById("demo_one").innerHTML = "Hello";
+        document.getElementById("demo_two").innerHTML = "John";
+        document.getElementById("demo_three").innerHTML = Date();
+      }
+
+      function myFunction_two() {
+        document.getElementById("demo_one").innerHTML = "Hi";
+        document.getElementById("demo_two").innerHTML = "Thomas";
+        document.getElementById("demo_three").innerHTML = " ";
+      }
+    </script>
+  </body>
+</html>

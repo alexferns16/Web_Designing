@@ -1,27 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
+  <head> </head>
 
-    </head>
+  <body>
+    <p id="demo_one">This is a paragraph</p>
 
-    <body>
-        <p id="demo_one">This is a paragraph</p>
+    <label for="num">Enter Pixels: </label>
+    <input type="text" id="num" name="number" />
+    <input type="submit" onclick="myFunction()" />
 
-        <label for="num">Enter Pixels:  </label>
-        <input type="text" id="num" name="number">
-        <input type="submit" onclick="myFunction()">
+    <script>
+      function myFunction() {
+        var data = document.getElementById("num").value;
 
-        <script>
-            function myFunction() {
-                var data = document.getElementById('num').value;
-
-                if (data == 35) {
-                    document.getElementById("demo_one").style.fontSize = data+'px';
-                }
-                else {
-                    document.getElementById("demo_one").style.fontSize = String(Number(data)+Number(10))+'px';
-                }
-            }
-        </script>
-    </body>
+        if (data == 35) {
+          document.getElementById("demo_one").style.fontSize = data + "px";
+        } else {
+          document.getElementById("demo_one").style.fontSize =
+            String(Number(data) + Number(10)) + "px";
+        }
+      }
+    </script>
+  </body>
 </html>
